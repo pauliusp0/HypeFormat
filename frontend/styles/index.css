@@ -1,0 +1,283 @@
+/* Navbar */
+
+header {
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.81);
+  background-image: url(https://hypeformat.com/wp-content/uploads/2020/10/hypeformat.com-mobile-1.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#navbar-container {
+  max-width: 1240px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: white;
+}
+
+#logo img {
+  max-width: 110px;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em 20px;
+}
+
+#head-page {
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 170px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  word-wrap: break-word;
+  padding-left: 10px;
+}
+#head-page h1 {
+  font-weight: 200;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 30px 0 30px 0;
+}
+#head-page h4 {
+  font-weight: 300;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: inherit;
+  font-size: 1.25rem;
+}
+
+#content-container,
+#cart {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+#cart i {
+  font-size: 25px;
+}
+#cart p {
+  display: none;
+}
+
+#cart-count {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  margin-top: -30px;
+  margin-left: -5px;
+  border-radius: 50%;
+}
+
+#nav {
+  width: 690px;
+  display: none;
+}
+#nav nav ul {
+  display: flex;
+  justify-content: right;
+}
+#nav nav ul li,
+#cart p {
+  list-style: none;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+#nav nav ul li i {
+  font-size: 10px;
+  margin: 5px;
+}
+#nav nav ul > a li:hover {
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  color: #ffffff;
+  cursor: pointer;
+}
+#nav nav ul li {
+  transition: all 0.2s linear;
+}
+
+.btn-hamburger {
+  border: none;
+  background-color: #ee4a44;
+  color: #ffffff;
+  font-size: 100%;
+  width: 102px;
+  height: 45px;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  color: white;
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown li {
+  cursor: pointer;
+}
+
+.dropdown-hiden {
+  transition: all 0.2s linear;
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-hiden a > li:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Main */
+
+#headpage-container {
+  padding: 25px 10px 15px 10px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+#headpage-container h2 {
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 30px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#categories-container h3 {
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.35;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-top: 10px;
+}
+#categories-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px 10px 15px 10px;
+  gap: 20px;
+  max-width: 1140px;
+}
+#categories-container img {
+  width: 100%;
+}
+#categories-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#categories-container > div {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#categories-container > div img:hover {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-shop {
+  border: none;
+  background-color: #ee4a44;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 142px;
+  height: 55px;
+  letter-spacing: 2px;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+#cardImg {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 770px) {
+  /* Navbar */
+  #head-page {
+    margin-top: 150px;
+  }
+
+  #headpage-container h2 {
+    font-size: 36px;
+  }
+  #headpage-container h3 {
+    font-size: 26px;
+  }
+  header {
+    background-image: url(https://hypeformat.com/wp-content/uploads/2020/10/hypeformat.com-header.jpg);
+  }
+  #logo img {
+    max-width: 140px;
+  }
+  #overlay {
+    padding: 1em 40px;
+  }
+  #head-page h1 {
+    font-size: 64px;
+  }
+
+  /* Main */
+  #categories-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  /* Navbar */
+  #nav,
+  #cart > p {
+    display: inline;
+  }
+  #overlay {
+    width: 100%;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+  #head-page {
+    margin-top: 100px;
+  }
+  #head-page h1 {
+    font-size: 5rem;
+  }
+  #headpage-container h2 {
+    font-size: 2.625rem;
+  }
+
+  /* Main */
+  #categories-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

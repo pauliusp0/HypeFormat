@@ -1,0 +1,478 @@
+.clicked {
+  background-color: var(--main-color);
+  color: white;
+}
+
+main {
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+
+#head-page h1 {
+  font-weight: 200;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 30px 0 30px 0;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.81);
+  background-image: url(https://hypeformat.com/wp-content/uploads/2020/10/hypeformat.com-mobile-1.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#navbar-container {
+  max-width: 1240px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: white;
+}
+
+#logo img {
+  max-width: 110px;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em 20px;
+}
+
+#content-container,
+#cart {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+#cart i {
+  font-size: 25px;
+}
+
+#cart p {
+  display: none;
+}
+
+#cart-count {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  margin-top: -30px;
+  margin-left: -5px;
+  border-radius: 50%;
+}
+
+#nav {
+  width: 690px;
+  display: none;
+}
+
+#nav nav ul {
+  display: flex;
+  justify-content: right;
+}
+
+#nav nav ul li,
+#cart p {
+  list-style: none;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+#nav nav ul li i {
+  font-size: 10px;
+  margin: 5px;
+}
+
+#nav nav ul > a li:hover {
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  color: #ffffff;
+  cursor: pointer;
+}
+#nav nav ul li {
+  transition: all 0.2s linear;
+}
+
+.btn-hamburger {
+  border: none;
+  background-color: #ee4a44;
+  color: #ffffff;
+  font-size: 100%;
+  width: 102px;
+  height: 45px;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  color: white;
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown li {
+  cursor: pointer;
+}
+
+.dropdown-hiden {
+  transition: all 0.2s linear;
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-hiden a > li:hover {
+  background-color: white;
+  color: black;
+}
+
+/* About us */
+
+#main-container {
+  padding: 35px 20px 100px 20px;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#main-container > h2 {
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 30px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+#main-container > h3 {
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.35;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 22px;
+}
+
+#main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  align-content: center;
+  padding-top: 20px;
+}
+#main-left-card {
+  padding: 10px;
+  text-align: center;
+}
+
+#main-left-card > img {
+  max-width: 75%;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#main-left-card > img:hover {
+  transform: scale(0.9);
+}
+
+#main-right-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+#main-right-card > p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.85714285714286;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 20px 25px 20px 25px;
+}
+#main-right-card > i {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+  font-size: 25px;
+  color: grey;
+}
+
+#creator-card {
+  display: flex;
+  align-items: center;
+}
+#creator-card > div {
+  margin-left: 10px;
+}
+#creator-card > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: none;
+}
+.role {
+  font-size: 0.85em;
+}
+
+#icons {
+  margin-top: 10px;
+  display: flex;
+}
+#icons > i {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #e6e6e6;
+  padding: 1em;
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icons > i:hover {
+  color: white;
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  cursor: pointer;
+}
+
+/* Contact us */
+
+#contacts {
+  padding: 35px 20px 20px 20px;
+  padding-bottom: 120px;
+}
+#contacts > h2 {
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#contacts-left-card {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#contacts-left-card > h3 {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.35;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#contacts-left-card > p > i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+#contacts-left-card > p {
+  margin: 20px 0 20px 0;
+}
+
+#followUs > h3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.35;
+  text-transform: capitalize;
+}
+
+#contacts-container {
+  max-width: 767px;
+}
+#contacts-right-card {
+  background-color: white;
+  padding: 25px 25px 25px 25px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+#contacts-right-card > h3 {
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.35;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label,
+button {
+  margin: 10px 0 10px 0;
+}
+form input {
+  border: 1px solid #818a91;
+  background-color: transparent;
+  color: #373a3c;
+  padding: 0.75em;
+  border-radius: 2px;
+}
+form > button {
+  letter-spacing: 2px;
+  background-color: #ee4a44;
+  color: #ffffff;
+  min-height: 40px;
+  font-size: 0.9375rem;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media screen and (min-width: 770px) {
+  /* Navbar */
+  #head-page {
+    margin: 0;
+  }
+  header {
+    background-image: url(https://hypeformat.com/wp-content/uploads/2020/10/hypeformat.com-header.jpg);
+    height: 276px;
+  }
+  #logo img {
+    max-width: 140px;
+  }
+  #overlay {
+    padding: 1em 40px;
+  }
+  #head-page h1 {
+    font-size: 64px;
+  }
+
+  /* About us */
+  #main-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #main-container {
+    padding-bottom: 120px;
+    padding: 50px 50px 150px 50px;
+  }
+  #main-container > h2 {
+    font-size: 36px;
+  }
+  #main-container > h3 {
+    font-size: 26px;
+  }
+  #main-right-card > p {
+    margin: 15px 35px 15px 35px;
+  }
+
+  /* Contact Us */
+  #contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  #contacts {
+    padding: 60px 50px 150px 50px;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  #contacts h2 {
+    font-size: 36px;
+  }
+
+  #contacts-left-card h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  /* Navbar */
+  header {
+    height: 400px;
+  }
+  #nav,
+  #cart > p {
+    display: inline;
+  }
+  #overlay {
+    width: 100%;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+  #head-page h1 {
+    font-size: 5rem;
+  }
+  #head-page {
+    margin-top: 100px;
+  }
+
+  /* about us */
+  #main-container {
+    padding: 100px 150px 100px 150px;
+  }
+  #main-container > h2 {
+    font-size: 2.625rem;
+  }
+  #main-container > h3 {
+    font-size: 1.875rem;
+  }
+
+  /* Contacts */
+  #contacts {
+    max-width: 1140px;
+    padding: 0;
+    padding: 100px 0px 150px 0px;
+  }
+  #contacts-container {
+    max-width: 1140px;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  #contacts-left-card {
+    padding: 50px 0px 0px 0px;
+  }
+  #contacts-left-card > h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  #contacts > h2 {
+    font-size: 2.625rem;
+  }
+  #contacts-left-card > p > i {
+    font-size: 18px;
+  }
+}

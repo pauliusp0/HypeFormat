@@ -1,0 +1,95 @@
+main {
+  /* display: flex;/ */
+  justify-content: center;
+}
+.productview-section {
+  padding: 5.34em 6.67em;
+  max-width: 1240px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+.productview-container {
+  display: flex;
+  gap: 40px;
+}
+.productview-container img {
+  width: 600px;
+  height: 600px;
+}
+.productview-container h1 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.productview-right-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35%;
+}
+
+.productview-right-card h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.productview-right-card > p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.85714285714286;
+}
+
+.productview-right-card select {
+  border: 1px solid #ddd;
+  padding: 0.75em;
+}
+
+.button-cont {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+.button-cont .qty {
+  width: 38px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #e4e4e4;
+  border-right-width: 1px;
+  align-items: center;
+  outline: 0;
+  text-align: center;
+}
+
+.add-basket-button {
+  height: 35px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: #ffffff;
+  border-color: #ee4a44;
+  background-color: #ee4a44;
+  font-size: 100%;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  margin-top: 50px;
+}
+
+.description > p {
+  margin-bottom: 1.6em;
+}
+.description > ul {
+  margin: 0 0 1.5em 3em;
+}
